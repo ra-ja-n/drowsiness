@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00ff00, #00bfff);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.assistant-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00ff00, #00bfff);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.animation-container {
+  margin-top: 30px;
+}
+
+.bounce-animation {
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.wave-animation {
+  animation: wave 1s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+/* Container for voice controls and button in the top right corner */
+.voice-controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(10deg, #00ff00, #00bfff);
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(230, 222, 222);
+  font-size: 14px; /* Smaller text */
+  width: auto;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  z-index: 1000;
+}
+
+/* Style for the select dropdown */
+.voice-controls select {
+  font-size: 12px; /* Smaller font */
+  padding: 3px;
+  color: azure;
+  width: 80px; /* Narrower select box */
+  background-color: rgba(37, 151, 43, 0.8);
+  border: 1px solid #43c559cd;
+  border-radius: 10px;
+}
+
+/* Style for the button */
+button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px; /* Smaller button text */
+  width: auto;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
